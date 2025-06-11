@@ -21,7 +21,8 @@ public class sistema {
             System.out.println("[3] - BUSCAR ALUNO POR NOME");
             System.out.println("[4] - MEDIA GERAL TURMA");
             System.out.println("[5] - ATUALIZAR NOTA");
-            System.out.println("[6] - SAIR DO SISTEMA");
+            System.out.println("[6] - REMOVER ALUNO");
+            System.out.println("[7] - SAIR DO SISTEMA");
             System.out.println("Escolha sua opcao: ");
             opcao = input.nextInt();
             input.nextLine();
@@ -73,13 +74,24 @@ public class sistema {
                     }
                     break;
                 case 6:
+                    System.out.println("DIGITE O NOME DO ALUNO PARA ATUALIZAR: ");
+                    String remover = input.nextLine();
+                    int indice2 = alunos.indexOf(remover);
+                    if (alunos.contains(remover)){
+                        alunos.remove(indice2);
+                        System.out.println("ALUNO EXCLUIDO COM SUCESSO");
+                    } else{
+                        System.out.println("ALUNO INVALIDO");
+                    }
+                    break;
+                case 7:
                     System.out.println("Saindo do sistema.....");
                     break;
                 default:
                     System.out.println("Opcao invalida");
                     break;
             }
-        } while (opcao != 6);
+        } while (opcao != 7);
         System.out.println("SISTEMA ENCERRADO");
         input.close();
         
