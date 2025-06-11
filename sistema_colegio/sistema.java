@@ -9,12 +9,13 @@ public class sistema {
         Double soma = 0.0;
         ArrayList <String> alunos = new ArrayList<String>();
         ArrayList <Double> notas = new ArrayList<Double>();
-        System.out.println("COLEGIO PUNHETA DE VACA");
+        System.out.println("COLEGIO Nome Qualquer");
         System.out.println("----------------------------------");
         System.out.println("SISTEMA DE CADASTRAMENTO DE ALUNOS");
         System.out.println("====================================");
         do{
             System.out.println("MENU");
+            System.out.println("COLEGIO Nome Qualquer");
             System.out.println("[1] - CADASTRO ALUNO");
             System.out.println("[2] - LISTAR ALUNOS e QUANTIDADE");
             System.out.println("[3] - BUSCAR ALUNO POR NOME");
