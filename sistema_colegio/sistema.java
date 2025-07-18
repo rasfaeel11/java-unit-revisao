@@ -10,7 +10,7 @@ public class sistema {
         ArrayList <String> alunos = new ArrayList<String>();
         ArrayList <Double> notas = new ArrayList<Double>();
         System.out.println("COLEGIO Nome Qualquer");
-        System.out.println("----------------------------------");
+        System.out.println("===================================");
         System.out.println("SISTEMA DE CADASTRAMENTO DE ALUNOS");
         System.out.println("====================================");
         do{
