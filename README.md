@@ -5,4 +5,5 @@
 <p><strong>Pastas</strong></p>
 <p>Nesse repositório contém atualmente 2 pastas, elas são:</p>
 <p><em><strong>📂desafios</strong></em>: contém os 3 desafios envolvendo switch case que o monitor da minha faculdade solicitou ser feito.</p>
-<em><strong>📂sistema-colegio</strong></em>: um sistema muito simples de um colegio qualquer com 7 funcionalideades no total. Usei para praticar o uso de Arrays.
+<p><em><strong>📂sistema-colegio</strong></em>: um sistema muito simples de um colegio qualquer com 7 funcionalideades no total. Usei para praticar o uso de ArraysLists.</p>
+<em><strong>📂att 01 oop:</strong></em>: primeira atividade pedida pelo professor, afim de testar connhecimnetos dos alunos.
