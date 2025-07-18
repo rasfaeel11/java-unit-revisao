@@ -74,7 +74,7 @@ public class sistema {
                     }
                     break;
                 case 6:
-                    System.out.println("DIGITE O NOME DO ALUNO PARA ATUALIZAR: ");
+                    System.out.println("DIGITE O NOME DO ALUNO PARA REMOVER: ");
                     String remover = input.nextLine();
                     int indice2 = alunos.indexOf(remover);
                     if (alunos.contains(remover)){
