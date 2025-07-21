@@ -4,7 +4,7 @@ import java.util.ArrayList;
 
 public class Main {
     public static void main(String[] args) {
-        // criacao de objetos
+        // criacao de objetos e declaracao de variaveis globais
         Scanner input = new Scanner(System.in);
         Livro livro = new Livro();
         ArrayList<String> livrosNome = new ArrayList<String>();
@@ -46,6 +46,38 @@ public class Main {
                     double precoLivro = input.nextDouble();
                     livrosPreco.add(precoLivro);
                     livro.cadastroLivro(nomeLivro, autorLivro, anoPublicacao, precoLivro);
+                    break;
+                case 2:
+                    System.out.println("LISTA DE LIVROS CADASTRADOS ATE O MOMENTO");
+                    System.out.println("Quantidade de livros ate o momento: " + livrosNome.size());
+                    for(int i = 0; i < livrosNome.size(); i++){
+                        System.out.printf("Livro: %s \n", livrosNome.get(i));
+                        System.out.printf("Autor: %s \n", livrosAutores.get(i));
+                        System.out.printf("Publicacao: %d \n", livrosPublicacao.get(i));
+                        System.out.printf("Preco: %.2f \n", livrosPreco.get(i));
+                    }
+                    break;
+                case 3:
+                    System.out.println("Digite o nome do livro para Buscar: ");
+                    String buscarLivro = input.nextLine();
+                        if (livrosNome.contains(buscarLivro)){
+                            System.out.println("Livro encontrado!");
+                        } else{
+                            System.out.println("Livro ainda nao adicionado");
+                        }
+                    break;
+                case 4:
+                        for(int i = 0; i < livrosNome.size(); i++){
+                            System.out.printf("[%d] %s \n", i, livrosNome.get(i));
+                        }
+                    System.out.println("Em qual livro voce deseja aplicar desconto? ");
+                    int indiceLivro = input.nextInt();
+                    System.out.println("Quantos % de desconto voce deseja aplicar?");
+                    int percentual = input.nextInt();
+                    double indexpreco = livrosPreco.get(indiceLivro);
+                    double novoPreco = livro.aplicarDesconto(indexpreco, percentual);
+                    livrosPreco.set(indiceLivro, novoPreco);
+
                     break;
             }
         } while (opcao !=7);

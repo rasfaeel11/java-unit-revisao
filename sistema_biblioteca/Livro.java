@@ -6,26 +6,16 @@ public class Livro {
     private int anoPublicacao;
     private double preco;
 
-    public String getTitulo() {
-        return titulo;
-    }
-
-    public String getAutor() {
-        return autor;
-    }
-
-    public int getAnoPublicacao() {
-        return anoPublicacao;
-    }
-
-    public double getPreco() {
-        return preco;
-    }
-
     public void cadastroLivro(String tituloLivro, String autorLivro, int anoPublicacaoLivro, double precoLivro){
         this.titulo = tituloLivro;
         this.autor = autorLivro;
         this.anoPublicacao = anoPublicacaoLivro;
         this.preco = precoLivro;
+    }
+    public double aplicarDesconto(double indexPreco, int percentual){
+        double porcentagem = percentual / 100.0;
+        double desconto = indexPreco * porcentagem;
+        indexPreco -= desconto;
+        return indexPreco;
     }
 }
