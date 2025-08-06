@@ -1,4 +1,4 @@
-package desafios_gpt;
+package desafios_gpt.exNotasMetodos;
 
 public class Aluno {
     private String nome;
