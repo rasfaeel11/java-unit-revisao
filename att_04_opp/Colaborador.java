@@ -7,6 +7,7 @@ public class Colaborador {
     private double descontoSalarioValor;
     private double salarioLiquido;
 
+    //metodos Getters and Setters
     public double getSalarioLiquido() {
         return salarioLiquido;
     }
@@ -46,7 +47,8 @@ public class Colaborador {
     public void setSalarioColaboradorBruto(double salarioColaborador) {
         this.salarioColaboradorBruto = salarioColaborador;
     }
-    // codigo principal
+    
+    // Sub rotinas
     public void definirTipoSalario(double salario){
         if(salario <= 2000){
             this.tipoDesconto = "Isento";
