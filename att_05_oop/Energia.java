@@ -1,12 +1,14 @@
 package att_05_oop;
 
 public class Energia {
+    // atributos de Objeto
     private double leituraMesAnterior;
     private double leituraMesAtual;
     private double qtdKWh;
     private double valorConta;
     private String tipoConta;
 
+    // getters and setters
     public void setLeituraMesAnterior(double leituraMesAnterior) {
         this.leituraMesAnterior = leituraMesAnterior;
     }
@@ -23,7 +25,7 @@ public class Energia {
     public String getTipoConta() {
         return tipoConta;
     }
-
+    //subRotinas Principais
     public double quantidadeQWh(){
         double quatQwh;
         if(this.leituraMesAnterior > this.leituraMesAtual){
@@ -35,7 +37,8 @@ public class Energia {
         this.qtdKWh = quatQwh;
         return quatQwh;
     }
-
+    // tentei nao utilizar Magic Numbers, foi um feedback que um amigo meu me passou, nao sei se isso e uma boa pratica.
+    // Se nao for, por favor me fale
     public double valorContaEnergia(){
         double valorConta;
         double valorPadraoKWh = 0.48;
@@ -79,8 +82,8 @@ public class Energia {
         }
         return consumoMinimoEnergia;
     }
-
-    public void ordemRotinas(){
+    // rotina pra poder facilitar
+    public void processarConta(){
         quantidadeQWh();
         valorContaEnergia();
         consumoMinimoEnergia();
