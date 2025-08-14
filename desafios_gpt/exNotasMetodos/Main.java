@@ -1,4 +1,4 @@
-package desafios_gpt;
+package desafios_gpt.exNotasMetodos;
 
 public class Main {
     public static void main(String[] args) {
